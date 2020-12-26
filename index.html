@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Editor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
 </head>
@@ -15,12 +14,12 @@
         <h1 class="banner text-primary">Text Editor</h1>
         <div class="row">
             <div class="col">
-                <button class="btn btn-light" id="bold" type="button">Bold</button>
-                <button class="btn btn-light" id="italic" type="button">Italic</button>
-                <button class="btn btn-light" id="underline" type="button">Underline</button>
-                <button class="btn btn-light" id="left-align" type="button"><i class="fas fa-align-left"></i></button>
-                <button class="btn btn-light" id="center-align" type="button"><i class="fas fa-align-center"></i></button>
-                <button class="btn btn-light" id="right-align" type="button"><i class="fas fa-align-right"></i></button>
+                <button id="bold" type="button" onclick="makeBold(this)" class="btn btn-light">Bold</button>
+                <button id="italic" type="button" onclick="makeItalic(this)" class="btn btn-light">Italic</button>
+                <button id="underline" type="button" onclick="makeUnderline(this)" class="btn btn-light">Underline</button>
+                <button id="left-align" type="button" onclick="alignText(this, 'left')" class="align btn btn-light"><i class="fas fa-align-left"></i></button>
+                <button id="center-align" type="button" onclick="alignText(this, 'center')" class="align btn btn-light"><i class="fas fa-align-center"></i></button>
+                <button id="right-align" type="button" onclick="alignText(this, 'right')" class="align btn btn-light"><i class="fas fa-align-right"></i></button>
             </div>
         </div>
         <hr/>
